@@ -18,6 +18,15 @@ yarn / npm install
 react-native run-android / ios
 ```
 
+## How to login
+
+```bash
+#There are two ways to login
+
+1. username : codemian | password : rahasia
+2. username : river | password : rahasia
+```
+
 ## Project structure
 
 ```bash
