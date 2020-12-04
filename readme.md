@@ -25,6 +25,8 @@ react-native run-android / ios
 ├── assets                                # assets for this app
 │   ├── fonts.                            # customable font
 │   ├── images                            # all image for this app
+├── assets                                # download app here
+│   ├── codemi-test.apk                   # all image for this app
 ├── src
 │   ├── components                        # customable component
 │   │   ├── buttton
