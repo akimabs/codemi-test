@@ -12,14 +12,14 @@ jobs:
         with:
           node-version: 12.x
 
-      - name: Cache npm dependencies
+      - name: Cache yarn dependencies
         uses: actions/cache@v2
         with:
-          path: '~/.npm'
+          path: '~/.yarn'
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: npm ci
+      - run: yarn ci
 
       - run: ./gradlew assembleDebug -Dorg.gradle.logging.level=info
         working-directory: android
