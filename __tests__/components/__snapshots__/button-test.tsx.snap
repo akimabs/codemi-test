@@ -1,0 +1,634 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Rendering should match to snapshot - Button: button snapshot 1`] = `
+Object {
+  "buttenDanger": <View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#d9534f",
+            "borderRadius": 8,
+            "height": 80,
+            "justifyContent": "center",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#072c5a",
+                "fontSize": 12,
+              },
+              Array [
+                false,
+                false,
+                false,
+                Object {
+                  "fontFamily": "Lato-Bold",
+                  "fontSize": 16,
+                },
+              ],
+              Object {
+                "color": "#333333",
+              },
+              Object {
+                "fontSize": 14,
+              },
+              Array [
+                Object {
+                  "color": "#FFF",
+                  "fontFamily": "Ubuntu-Medium",
+                },
+                false,
+                false,
+                false,
+              ],
+            ]
+          }
+          type="bold"
+        >
+          Button Danger
+        </Text>
+      </View>
+    </View>
+  </View>,
+  "button": <View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#32ab3a",
+            "borderRadius": 8,
+            "height": 80,
+            "justifyContent": "center",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#072c5a",
+                "fontSize": 12,
+              },
+              Array [
+                false,
+                false,
+                false,
+                Object {
+                  "fontFamily": "Lato-Bold",
+                  "fontSize": 16,
+                },
+              ],
+              Object {
+                "color": "#333333",
+              },
+              Object {
+                "fontSize": 14,
+              },
+              Array [
+                false,
+                Object {
+                  "color": "#FFF",
+                  "fontFamily": "Ubuntu-Medium",
+                },
+                false,
+                false,
+              ],
+            ]
+          }
+          type="bold"
+        >
+          Button Primary
+        </Text>
+      </View>
+    </View>
+  </View>,
+  "buttonSuccess": <View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#5cb85c",
+            "borderRadius": 8,
+            "height": 80,
+            "justifyContent": "center",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#072c5a",
+                "fontSize": 12,
+              },
+              Array [
+                false,
+                false,
+                false,
+                Object {
+                  "fontFamily": "Lato-Bold",
+                  "fontSize": 16,
+                },
+              ],
+              Object {
+                "color": "#333333",
+              },
+              Object {
+                "fontSize": 14,
+              },
+              Array [
+                false,
+                false,
+                false,
+                Object {
+                  "color": "#FFF",
+                  "fontFamily": "Ubuntu-Medium",
+                },
+              ],
+            ]
+          }
+          type="bold"
+        >
+          Button Success
+        </Text>
+      </View>
+    </View>
+  </View>,
+  "buttonWithChildern": <View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={Object {}}
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#072c5a",
+                "fontSize": 12,
+              },
+              Array [
+                Object {
+                  "fontFamily": "Lato-Thin",
+                  "fontSize": 16,
+                },
+                false,
+                false,
+                false,
+              ],
+              Object {
+                "color": "#333333",
+              },
+              Object {
+                "fontSize": 14,
+              },
+              undefined,
+            ]
+          }
+          type="thin"
+        >
+          Button Primary
+        </Text>
+      </View>
+    </View>
+  </View>,
+  "butttonLight": <View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#32ab3a30",
+            "borderRadius": 8,
+            "paddingVertical": 15,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#072c5a",
+                "fontSize": 12,
+              },
+              Array [
+                false,
+                false,
+                false,
+                Object {
+                  "fontFamily": "Lato-Bold",
+                  "fontSize": 16,
+                },
+              ],
+              Object {
+                "color": "#333333",
+              },
+              Object {
+                "fontSize": 14,
+              },
+              Array [
+                false,
+                false,
+                Object {
+                  "color": "#32ab3a",
+                  "fontFamily": "Ubuntu-Medium",
+                },
+                false,
+              ],
+            ]
+          }
+          type="bold"
+        >
+          Button Light
+        </Text>
+      </View>
+    </View>
+  </View>,
+  "disable": <View>
+    <View
+      style={
+        Array [
+          Array [
+            false,
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#32ab3a",
+              "borderRadius": 8,
+              "height": 80,
+              "justifyContent": "center",
+              "overflow": "hidden",
+            },
+            false,
+            false,
+          ],
+          undefined,
+          Object {
+            "transform": Array [
+              Object {
+                "scale": Object {
+                  "current": 1,
+                },
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#072c5a",
+              "fontSize": 12,
+            },
+            Array [
+              false,
+              false,
+              false,
+              Object {
+                "fontFamily": "Lato-Bold",
+                "fontSize": 16,
+              },
+            ],
+            Object {
+              "color": "#333333",
+            },
+            Object {
+              "fontSize": 14,
+            },
+            Array [
+              false,
+              Object {
+                "color": "#FFF",
+                "fontFamily": "Ubuntu-Medium",
+              },
+              false,
+              false,
+            ],
+          ]
+        }
+        type="bold"
+      >
+        Disable Button Primary
+      </Text>
+    </View>
+  </View>,
+  "disableButtonWithChild": <View>
+    <View
+      style={
+        Array [
+          Array [
+            false,
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#32ab3a",
+              "borderRadius": 8,
+              "height": 80,
+              "justifyContent": "center",
+              "overflow": "hidden",
+            },
+            false,
+            false,
+          ],
+          undefined,
+          Object {
+            "transform": Array [
+              Object {
+                "scale": Object {
+                  "current": 1,
+                },
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#072c5a",
+              "fontSize": 12,
+            },
+            Array [
+              Object {
+                "fontFamily": "Lato-Thin",
+                "fontSize": 16,
+              },
+              false,
+              false,
+              false,
+            ],
+            Object {
+              "color": "#333333",
+            },
+            Object {
+              "fontSize": 14,
+            },
+            undefined,
+          ]
+        }
+        type="thin"
+      >
+        Button Primary
+      </Text>
+    </View>
+  </View>,
+  "withOutAnimate": <View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Array [
+              false,
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#32ab3a",
+                "borderRadius": 8,
+                "height": 80,
+                "justifyContent": "center",
+                "overflow": "hidden",
+              },
+              false,
+              false,
+            ],
+            undefined,
+            Object {
+              "transform": Array [
+                Object {
+                  "scale": Object {
+                    "current": 1,
+                  },
+                },
+              ],
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#072c5a",
+                "fontSize": 12,
+              },
+              Array [
+                false,
+                false,
+                false,
+                Object {
+                  "fontFamily": "Lato-Bold",
+                  "fontSize": 16,
+                },
+              ],
+              Object {
+                "color": "#333333",
+              },
+              Object {
+                "fontSize": 14,
+              },
+              Array [
+                false,
+                Object {
+                  "color": "#FFF",
+                  "fontFamily": "Ubuntu-Medium",
+                },
+                false,
+                false,
+              ],
+            ]
+          }
+          type="bold"
+        >
+          Button Primary
+        </Text>
+      </View>
+    </View>
+  </View>,
+  "withOutRipple": <View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Array [
+              false,
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#32ab3a",
+                "borderRadius": 8,
+                "height": 80,
+                "justifyContent": "center",
+                "overflow": "hidden",
+              },
+              false,
+              false,
+            ],
+            undefined,
+            Object {
+              "transform": Array [
+                Object {
+                  "scale": Object {
+                    "current": 1,
+                  },
+                },
+              ],
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#072c5a",
+                "fontSize": 12,
+              },
+              Array [
+                false,
+                false,
+                false,
+                Object {
+                  "fontFamily": "Lato-Bold",
+                  "fontSize": 16,
+                },
+              ],
+              Object {
+                "color": "#333333",
+              },
+              Object {
+                "fontSize": 14,
+              },
+              Array [
+                false,
+                Object {
+                  "color": "#FFF",
+                  "fontFamily": "Ubuntu-Medium",
+                },
+                false,
+                false,
+              ],
+            ]
+          }
+          type="bold"
+        >
+          Button Primary
+        </Text>
+      </View>
+    </View>
+  </View>,
+}
+`;

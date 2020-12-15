@@ -15,7 +15,7 @@ type PropsButton = {
   type?: 'primary' | 'danger' | 'light' | 'success';
   onPress?: () => void;
   style?: Object;
-  children?: any;
+  children?: React.Component | any;
   withOutRipple?: boolean;
   withOutAnimate?: boolean;
   disable?: boolean;
@@ -27,40 +27,38 @@ const Button: React.FC<PropsButton> = ({
   title,
   onPress,
   children,
-  withOutRipple = false,
-  withOutAnimate = false,
-  disable = false,
+  withOutRipple,
+  withOutAnimate,
+  disable,
 }) => {
-  const [state] = React.useState({
-    animated: new Animated.Value(1),
-  });
+  const animated: any = React.useRef(new Animated.Value(1));
 
   const inAnimate = (): void => {
-    Animated.spring(state.animated, {
+    Animated.spring(animated, {
       toValue: 1.03,
       useNativeDriver: true,
     }).start();
   };
 
   const outAnimate = (): void => {
-    Animated.spring(state.animated, {
+    Animated.spring(animated, {
       toValue: 1,
       useNativeDriver: true,
     }).start(onPress);
   };
 
   const animatedStyle: Object = {
-    transform: [{scale: state.animated}],
+    transform: [{scale: animated}],
   };
 
-  const types: any = [
+  const types: Object = [
     type === 'danger' && styles.dark,
     type === 'primary' && styles.primary,
     type === 'light' && styles.light,
     type === 'success' && styles.success,
   ];
 
-  const textStyles: any = [
+  const textStyles: Object = [
     type === 'danger' && styles.textDark,
     type === 'primary' && styles.textPrimary,
     type === 'light' && styles.textLight,
@@ -74,32 +72,20 @@ const Button: React.FC<PropsButton> = ({
         : TouchableNativeFeedback
       : TouchableOpacity;
 
+  const Wrapper: any = withOutAnimate ? View : Animated.View;
+
   return (
     <View>
       {disable ? (
-        <View>
-          {withOutAnimate ? (
-            <View style={[types, style]}>
-              {children ? (
-                children
-              ) : (
-                <Text type="bold" style={textStyles}>
-                  {title}
-                </Text>
-              )}
-            </View>
+        <Wrapper style={[types, style, withOutAnimate && animatedStyle]}>
+          {children ? (
+            children
           ) : (
-            <Animated.View style={[animatedStyle, types, style]}>
-              {children ? (
-                children
-              ) : (
-                <Text type="bold" style={textStyles}>
-                  {title}
-                </Text>
-              )}
-            </Animated.View>
+            <Text type="bold" style={textStyles}>
+              {title}
+            </Text>
           )}
-        </View>
+        </Wrapper>
       ) : (
         <Touchable
           activeOpacity={0.99}
@@ -108,33 +94,25 @@ const Button: React.FC<PropsButton> = ({
           onPressIn={inAnimate}
           onPressOut={outAnimate}
           onPress={onPress}>
-          {withOutAnimate ? (
-            <Animated.View style={[types, style]}>
-              {children ? (
-                children
-              ) : (
-                <Text type="bold" style={textStyles}>
-                  {title}
-                </Text>
-              )}
-            </Animated.View>
-          ) : (
-            <Animated.View
-              // eslint-disable-next-line react-native/no-inline-styles
-              style={[{overflow: 'hidden'}, animatedStyle, types, style]}>
-              {children ? (
-                children
-              ) : (
-                <Text type="bold" style={textStyles}>
-                  {title}
-                </Text>
-              )}
-            </Animated.View>
-          )}
+          <Wrapper style={[types, style, withOutAnimate && animatedStyle]}>
+            {children ? (
+              children
+            ) : (
+              <Text type="bold" style={textStyles}>
+                {title}
+              </Text>
+            )}
+          </Wrapper>
         </Touchable>
       )}
     </View>
   );
+};
+
+Button.defaultProps = {
+  withOutAnimate: false,
+  withOutRipple: false,
+  disable: false,
 };
 
 export default Button;
